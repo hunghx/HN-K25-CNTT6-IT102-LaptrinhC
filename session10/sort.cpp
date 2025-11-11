@@ -27,21 +27,21 @@ int main(){
 //		}
 //	}
 	
-//	for(i = 0; i<n-1; i++){
-//		int min = arr[i];
-//		int min_index = i;
-//		for(j=i+1; j<n; j++){
-//			if(min > arr[j]){
-//				min = arr[j];
-//				min_index = j;
-//			}
-//		}
-//		if(min_index != i){
-//			// swap
-//			arr[min_index] = arr[i];
-//			arr[i] = min;
-//		}
-//	}
+	for(i = 0; i<n-1; i++){
+		int min = arr[i]; // ptu dau 
+		int min_index = i;
+		for(j=i+1; j<n; j++){
+			if(min > arr[j]){
+				min = arr[j];
+				min_index = j;
+			}
+		}
+		if(min_index != i){
+			// swap
+			arr[min_index] = arr[i];
+			arr[i] = min;
+		}
+	}
 
 	for(i = 1; i < n; i++){
 		// phan tu can chen arr[i]
